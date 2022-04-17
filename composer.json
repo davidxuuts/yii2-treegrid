@@ -1,0 +1,36 @@
+{
+    "name": "davidxu/yii2-treegrid",
+    "description": "Extension for Yii2 Framework to work with jQuery TreeGrid",
+    "type": "yii2-extension",
+    "license": "MIT",
+    "keywords": [
+        "yii2 extension",
+        "tree",
+        "treegrid",
+        "treeview",
+        "interface",
+        "yii2"
+    ],
+    "authors": [
+        {
+            "name": "David Xu",
+            "email": "david.xu.uts@163.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4",
+        "davidxu/yii2-base": "^1.0"
+    },
+    "repositories":[
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "davidxu\\treegrid\\": "src/"
+        }
+    }
+}
