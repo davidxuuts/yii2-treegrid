@@ -534,7 +534,6 @@
             return $(this).each(function() {
                 var $this = $(this);
                 var expander = $this.treegrid('getSetting', 'getExpander').apply(this);
-                console.log(expander)
                 if (expander) {
                     if (!$this.treegrid('isCollapsed')) {
                         // expander.removeClass($this.treegrid('getSetting', 'expanderCollapsedClass'));
