@@ -20,7 +20,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.4",
-        "davidxu/yii2-base": "^1.0"
+        "davidxu/yii2-base": "^1.0.5"
     },
     "repositories":[
         {

@@ -14,7 +14,7 @@ class TreeGridBS3Asset extends AssetBundle
     /**
      * @var string
      */
-    public $sourcePath = __DIR__;
+    public $sourcePath = '@davidxu/treegrid';
 
     /**
      * @var array
