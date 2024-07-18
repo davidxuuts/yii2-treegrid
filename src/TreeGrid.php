@@ -6,6 +6,8 @@ use Yii;
 use Closure;
 use yii\base\Widget;
 use yii\base\InvalidConfigException;
+use yii\data\BaseDataProvider;
+use yii\data\DataProviderInterface;
 use yii\grid\DataColumn;
 use yii\helpers\Html;
 use yii\helpers\Json;
@@ -21,7 +23,7 @@ use yii\i18n\Formatter;
 class TreeGrid extends Widget
 {
     /**
-     * @var \yii\data\DataProviderInterface|\yii\data\BaseDataProvider the data provider for the view. This property is required.
+     * @var DataProviderInterface|BaseDataProvider the data provider for the view. This property is required.
      */
     public $dataProvider;
 
@@ -33,7 +35,7 @@ class TreeGrid extends Widget
 
     /**
      * @var array the HTML attributes for the container tag of the grid view.
-     * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
+     * @see Html::renderTagAttributes for details on how attributes are being rendered.
      */
     public $options = ['class' => 'table table-striped table-bordered'];
 
@@ -44,12 +46,12 @@ class TreeGrid extends Widget
 
     /**
      * @var array the HTML attributes for the table header row.
-     * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
+     * @see Html::renderTagAttributes for details on how attributes are being rendered.
      */
     public $headerRowOptions = [];
     /**
      * @var array the HTML attributes for the table footer row.
-     * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
+     * @see Html::renderTagAttributes for details on how attributes are being rendered.
      */
     public $footerRowOptions = [];
 
@@ -66,7 +68,7 @@ class TreeGrid extends Widget
     /**
      * @var array the HTML attributes for the emptyText of the list view.
      * The "tag" element specifies the tag name of the emptyText element and defaults to "div".
-     * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
+     * @see Html::renderTagAttributes for details on how attributes are being rendered.
      */
     public $emptyTextOptions = ['class' => 'empty'];
 
@@ -105,7 +107,7 @@ class TreeGrid extends Widget
      * - `$index`: the zero-based index of the data model in the model array returned by [[dataProvider]]
      * - `$grid`: the GridView object
      *
-     * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
+     * @see Html::renderTagAttributes for details on how attributes are being rendered.
      */
     public $rowOptions = [];
 

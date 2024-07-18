@@ -5,6 +5,7 @@ namespace davidxu\treegrid;
 use yii\web\AssetBundle;
 use yii\web\YiiAsset;
 use yii\bootstrap5\BootstrapAsset;
+use yii\bootstrap5\BootstrapIconAsset;
 
 /**
  * This asset bundle provides the [jQuery TreeGrid plugin library](https://github.com/maxazan/jquery-treegrid)
@@ -31,11 +32,12 @@ class TreeGridAsset extends AssetBundle
     public function init()
     {
         $min = YII_ENV_DEV ? '' : '.min';
-        $this->js[] = 'js/jquery.treegrid.fa5' . $min . '.js';
+        $this->js[] = 'js/jquery.treegrid.bs5' . $min . '.js';
     }
 
     public $depends = [
         YiiAsset::class,
         BootstrapAsset::class,
+        BootstrapIconAsset::class,
     ];
 }
